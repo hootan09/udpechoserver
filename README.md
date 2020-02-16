@@ -1,6 +1,6 @@
 # udp echo server
 
-```sh
+```log
 
 #server Side
 
