@@ -15,7 +15,7 @@ server.on('message', function (msg, info) {
     console.log('message [%s] Received %d bytes from %s:%d', msg.toString(), msg.length, info.address, info.port);
 
     //sending msg
-    server.send(msg, info.port, 'localhost', function (error) {
+    server.send(msg, info.port, info.address, function (error) {
         if (error) {
             client.close();
         } else {
